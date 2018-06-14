@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
   <head>
 
@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
 
     <title>Autonomus</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:400,600,700" rel="stylesheet">
 
 
     <!-- Bootstrap core CSS -->
@@ -20,8 +20,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body id="page-top">
@@ -31,7 +30,7 @@
       <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
           <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img src="img/logo.png" alt="AUTONOMUS">
+            <img class="nav-image"src="img/logo.png" alt="AUTONOMUS">
           </a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -58,9 +57,9 @@
      </div>
 
      <header class="header">
-       <div class="header-content">
+       <div class="header-content col-lg-10 offset-lg-1 col-md-12">
             <h2 class="text-uppercase">Projeto Autonomus</h2>
-            <p class="lead">Tecnologia assistiva para pacientes portadores de Esclerose Lateral Amiotrófica (ELA)</p>
+            <p class="lead">O futuro é aquele no qual comandamos o nosso mundo em um piscar de olhos</p>
             <a  class="js-scroll-trigger"  href="#about">
               <div class="header-content-button">
                 <div class="chevron"></div>
@@ -189,7 +188,7 @@
     <section class="history" id="history">
 			<div class="container">
   			<div class="row">
-          <div class="col-lg-6 history-hardware hide" id="anjo" data-page="anjo">
+          <div class="col-lg-6 history-hardware hide" data-page="anjo">
             <figure class="item-content d-flex justify-content-center">
               <div class="item-img">
                 <img class="img-fluid" src="img/hardware/anjo.png" alt="Um Anjo Para ELA" width="300px">
@@ -198,16 +197,16 @@
             <h3 class="text-uppercase">Um Anjo Para Ela</h3>
             <p class="mb-4">O anjo para ELA realizava o monitoramento dos parâmetros respiratórios dos pacientes em leitos hospitalares como forma de auxiliar à equipe de saúde em seu acompanhamento. Para isso, era utilizada uma webcam, que capturava os valores da tela do ventilador mecânico e os salvava no banco de dados. Assim, através de qualquer dispositivo, como smartphones, tablets, computadores, a equipe poderia se conectar ao sistema de supervisão, para monitorar de forma on-line a situação dos pacientes.</p>
           </div>
-          <div class="col-lg-6 history-hardware hide" id="epoc" data-page="epoc">
+          <div class="col-lg-6 history-hardware hide" data-page="epoc">
             <figure class="item-content d-flex justify-content-center">
               <div class="item-img">
-                <img class="img-fluid" src="img/hardware/epoc.png" alt="Pupil" width="300px">
+                <img class="img-fluid" src="img/hardware/epoc.png" alt="epoc" width="300px">
               </div>
             </figure>
             <h3 class="text-uppercase">Epoc</h3>
             <p class="mb-4">O Epoc era uma espécie de tiara, que possuía pequenos dispositivos eletrônicos, utilizada para captar os impulsos eletromagnéticos vindos do cérebro, sendo estes transferidos para um computador que continha o software do Autonomus, que era responsável pela realização das atividades. Assim, era possível, por exemplo, que uma pessoa que não tem os movimentos dos membros pudesse mudar o canal da TV, mandar e-mails, escrever, usando apenas a visão.</p>
           </div>
-          <div class="col-lg-6 history-hardware hide" id="pupil" data-page="pupil">
+          <div class="col-lg-6 history-hardware hide" data-page="pupil">
             <figure class="item-content d-flex justify-content-center">
               <div class="item-img">
                 <img class="img-fluid" src="img/hardware/pupil.png" alt="Pupil" width="300px">
@@ -216,7 +215,7 @@
             <h3 class="text-uppercase">Pupil</h3>
             <p class="mb-4">O Pupil é um óculos que utiliza uma técnica conhecida como eye tracking (rastreamento do movimento ocular) para detectar a direção para a qual o paciente está olhando. Por meio dessa detecção, era possível traduzir o movimento ocular do usuário em coordenadas do mouse no computador, permitindo que o mesmo fosse capaz de controlar todos os dispositivos eletrônicos da sua casa, trocar e-mails, ler livros e até mesmo falar.</p>
           </div>
-          <div class="col-lg-6 history-hardware" id="webcam" data-page="webcam">
+          <div class="col-lg-6 history-hardware" data-page="webcam">
             <figure class="item-content d-flex justify-content-center">
               <div class="item-img">
                 <img class="img-fluid" src="img/hardware/webcam.png" alt="Webcam" width="300px">
@@ -227,54 +226,54 @@
           </div>
   				<div class="col-lg-6">
             <div class="history-timeline">
-							<div class="history-timeline-eyear" data-page="anjo">
+							<div class="history-timeline-eyear" data-page="anjo"  id="anjo-click">
 								<time datetime="2006">2012</time>
 								<div class="history-timeline-period">
-									<span class="circle anjo_click"></span>
+									<span  id="anjo-circle" class="circle"></span>
 									<div class="history-timeline-period-img">
-                    <img class="img-fluid anjo_click" src="img/hardware/anjo.jpg" alt="" width="60px" height="60px">
+                    <img class="img-fluid" src="img/hardware/anjo-thumb.png" alt="" width="60px" height="60px" />
                   </div>
 									<div class="history-timeline-period-info clear-after">
-										<h5 class="text-uppercase anjo_click mb-2">Um Anjo Para Ela</h5>
+										<h5 class="text-uppercase mb-2">Um Anjo Para Ela</h5>
 										<p>Visão computacional aplicada ao monitoramento on-line de parâmetros respiratórios de pacientes em ambiente hospitalar.</p>
 									</div><!-- period-info -->
 								</div><!-- period -->
 							</div><!-- year -->
-              <div class="history-timeline-eyear" data-page="epoc">
+              <div class="history-timeline-eyear" data-page="epoc" id="epoc-click">
                 <time datetime="2012">2013</time>
                 <div class="history-timeline-period">
-                  <span class="circle epoc_click"></span>
+                  <span  id="epoc-circle" class="circle"></span>
                   <div class="history-timeline-period-img">
-                    <img class="img-fluid epoc_click" src="img/hardware/epoc.jpg" alt="" width="60px" height="60px" data-page="epoc">
+                    <img class="img-fluid" src="img/hardware/epoc-thumb.png" alt="" width="60px" height="60px" />
                   </div>
                   <div class="history-timeline-period-info clear-after">
-                    <h5 class="text-uppercase epoc_click mb-2">Epoc</h5>
+                    <h5 class="text-uppercase mb-2">Epoc</h5>
                     <p>Captação de impulsos eletromagnéticos vindos do cérebro permitia ao paciente acessar o computador e controlar a televisão.</p>
                   </div><!-- period-info -->
                 </div><!-- period -->
               </div><!-- year -->
-              <div class="history-timeline-eyear" data-page="pupil">
+              <div class="history-timeline-eyear" data-page="pupil" id="pupil-click">
                 <time datetime="2012">2015</time>
                 <div class="history-timeline-period">
-                  <span class="circle pupil_click"></span>
+                  <span id="pupil-circle" class="circle"></span>
                   <div class="history-timeline-period-img">
-                    <img class="img-fluid pupil_click" src="img/hardware/pupil.jpg" alt="" width="60px" height="60px" data-page="pupil">
+                    <img class="img-fluid" src="img/hardware/pupil-thumb.png" alt="" width="60px" height="60px" />
                   </div>
                   <div class="history-timeline-period-info clear-after">
-                    <h5 class="text-uppercase pupil_click mb-2">Pupil</h5>
+                    <h5 class="text-uppercase mb-2">Pupil</h5>
                     <p>Rastreamento do movimento ocular para controlar o mouse em computadores.</p>
                   </div><!-- period-info -->
                 </div><!-- period -->
               </div><!-- year -->
-              <div class="history-timeline-eyear" data-page="webcam">
+              <div class="history-timeline-eyear" data-page="webcam" id="webcam-click">
                 <time datetime="2018">2017</time>
                 <div class="history-timeline-period">
-                  <span class="circle active webcam_click"></span>
+                  <span id="webcam-circle" class="circle active"></span>
                   <div class="history-timeline-period-img">
-                    <img class="img-fluid webcam_click" src="img/hardware/webcam.jpg" alt="" width="60px" height="60px" data-page="webcam">
+                    <img class="img-fluid" src="img/hardware/webcam-thumb.png" alt="" width="60px" height="60px" />
                   </div>
                   <div class="history-timeline-period-info clear-after">
-                    <h5 class="text-uppercase webcam_click mb-2">Mímico</h5>
+                    <h5 class="text-uppercase mb-2">Mímico</h5>
                     <p>Detecção dos gestos da face para reproduzir frases pré-programadas e controlar dispositivos smart.</p>
                   </div><!-- period-info -->
                 </div><!-- period -->
@@ -303,10 +302,10 @@
             <div class="col-lg-3 col-md-6 footer-links">
               <h4>Menu</h4>
               <ul>
-                <li><i class="ion-ios-arrow-right"></i> <a class="js-scroll-trigger" href="#page-top">Início</a></li>
-                <li><i class="ion-ios-arrow-right"></i> <a class="js-scroll-trigger" href="#about">O Projeto</a></li>
-                <li><i class="ion-ios-arrow-right"></i> <a class="js-scroll-trigger" href="#history">Histórico</a></li>
-                <li><i class="ion-ios-arrow-right"></i> <a class="js-scroll-trigger" href="#footer">Contato</a></li>
+                <li><a class="js-scroll-trigger" href="#page-top">Início</a></li>
+                <li><a class="js-scroll-trigger" href="#about">O Projeto</a></li>
+                <li><a class="js-scroll-trigger" href="#history">Histórico</a></li>
+                <li><a class="js-scroll-trigger" href="#footer">Contato</a></li>
               </ul>
             </div>
 
@@ -353,44 +352,44 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrolling-nav/scrolling-nav.js"></script>
 
-
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1EYdK8Z_X3IVkgQDAWmPNn-BIYdbGOj4"></script> -->
-    <script src="js/main.js"></script>
-
     <script>
      $(function () {
        $(document).scroll(function () {
      	  var $nav = $(".navbar");
      	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $(".nav-link").toggleClass("scroll", $(this).scrollTop() > $nav.height());
+        $(".nav-image").toggleClass("no-filter", $(this).scrollTop() > $nav.height());
      	});
      });
 
-     $('.anjo_click').on('click',
+
+
+     $('#anjo-click').on('click',
         function() {
           $(".circle").removeClass('active');
-          $(".circle.anjo_click").addClass('active');
+          $("#anjo-circle.circle").addClass('active');
         }
       );
 
 
-       $('.epoc_click').on('click',
+       $('#epoc-click').on('click',
           function() {
             $(".circle").removeClass('active');
-            $(".circle.epoc_click").addClass('active');
+            $("#epoc-circle.circle").addClass('active');
           }
         );
 
-      $('.pupil_click').on('click',
+      $('#pupil-click').on('click',
          function() {
            $(".circle").removeClass('active');
-           $(".circle.pupil_click").addClass('active');
+           $("#pupil-circle.circle").addClass('active');
          }
        );
 
-       $('.webcam_click').on('click',
+       $('#webcam-click').on('click',
           function() {
             $(".circle").removeClass('active');
-            $(".circle.webcam_click").addClass('active');
+            $("#webcam-circle.circle").addClass('active');
           }
         );
      </script>
